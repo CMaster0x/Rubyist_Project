@@ -3,3 +3,6 @@ def file_opener(file)
   dictionary = Hash[full_text.uniq.group_by{|element| element}.map{|name,quantity| [name,quantity.count]}]
   puts dictionary
 end
+
+
+file_opener("file.txt")
